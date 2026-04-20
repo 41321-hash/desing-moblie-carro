@@ -1,79 +1,51 @@
+main {
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+  text-transform: none;
+}
+p {
+  font-family: 'Arial', sans-serif;
+  color: #666;
+  margin-bottom: 20px;
+  text-align: center;
+}
 
-.fundo-gradiente {
-  /* "to bottom" faz o branco começar em cima e o preto terminar embaixo */
-  background: linear-gradient(to bottom, white, black);
-  
-  /* vh = view height (altura da janela do navegador) */
-  height: 17vh; 
-  width: 100vw;
+.selecao-carros {
+  width: 280px;
+  background: white;
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  overflow: hidden; 
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-h1 {
-  /* Tamanho da letra (4rem é bem grande) */
-  font-size: 2rem;
-  
-  /* Fonte mais moderna e limpa */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  
-  /* Deixa a letra mais "gordinha" */
-  font-weight: 800;
-  
-  /* Transforma tudo em maiúsculo */
-  text-transform: uppercase;
-  
-  /* Espaço entre as letras */
-  letter-spacing: 4px;
-  
-  /* Cor (um cinza bem escuro ou preto para contrastar com o branco) */
-  color: #250d0d;
-  
-  /* Tira a margem padrão para não empurrar o fundo */
-  margin: 0;
-  padding-top: 40px;
-  
-  /* Sombra leve para dar um estilo chic */
-  text-shadow: 2px 2px 4px rgba(167, 47, 47, 0.1);
-  
-  /* Centraliza se não estiver centralizado */
-  text-align: center;
-}
-/* Estilo da caixa (atualizado) */
-.selecao-carros {
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  border-radius: 20px;
-  width: 90%;
-  max-width: 400px; /* Tamanho de um "card" */
-  margin: 20px auto;
-  padding: 15px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-  text-align: center;
-  color: white;
-  transition: transform 0.3s ease; /* Efeito suave ao passar o mouse */
-}
 
-/* Efeito de aumentar ao passar o mouse */
-.selecao-carros:hover {
-  transform: scale(1.05);
-  border-color: white;
-}
-
-/* Estilo da Imagem */
 .imagem-carro {
-  width: 100%;       /* Ocupa toda a largura da caixa */
-  height: auto;      /* Mantém a proporção */
-  border-radius: 15px; /* Bordas arredondadas na foto também */
-  object-fit: cover;
-  margin-bottom: 15px;
+  width: 100%;
+  height: 180px;      
+  object-fit: cover;  
+  border-radius: 12px;
+  margin-bottom: 10px;
 }
 
-/* Estilo do Texto */
-.selecao-carros h3 {
-  margin: 10px 0 5px 0;
-  font-family: sans-serif;
-  letter-spacing: 1px;
-  
+.container-vitrine {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  min-height: 100vh;
 }
